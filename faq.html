@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жиі қойылатын сұрақтар - Қазақстан бойынша саяхат</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Қазақстанға саяхат. Логотип">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Басты бет.html">Басты</a></li>
+                <li><a href="team.html">Біздің ұжым</a></li>
+                <li><a href="values.html">Біздің құндылықтар</a></li>
+                <li><a href="places.html">Ерекше жерлер</a></li>
+                <li><a href="faq.html">Жиі қойылатын сұрақтар</a></li>
+                <li><a href="contacts.html">Контактілер</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="faq">
+            <h1>Жиі қойылатын сұрақтар</h1>
+            <div class="faq-questions">
+                <div class="faq-item">
+                    <h2 class="question" onclick="showAnswer('answer1')">Саяхат үшін дұрыс бағытты қалай таңдауға болады?</h2>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="showAnswer('answer2')">Шетелге саяхаттау үшін қандай құжаттар қажет?</h2>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="showAnswer('answer3')">Брондау кезінде қандай төлем әдістері қабылданады?</h2>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="showAnswer('answer4')">Сіз қандай туризм түрлерін ұсынасыз?</h2>
+                </div>
+                <div class="faq-item">
+                    <h2 class="question" onclick="showAnswer('answer5')">Саяхат кезінде қандай қауіпсіздік шараларын қолдану керек?</h2>
+                </div>
+            </div>
+            <div class="faq-answers">
+                <div id="answer1" class="answer" style="display: none;">
+                    <p>Бағытты таңдағанда, қызығушылықтарыңызды, маусымды, бюджетіңізді және қауіпсіздік нұсқауларын ескеріңіз. Біз кеңестер беруге дайынбыз!</p>
+                    <img src="destination.jpg" alt="Бағыт суреті">
+                </div>
+                <div id="answer2" class="answer" style="display: none;">
+                    <p>Шетелге саяхаттау үшін әдетте төлқұжат және елге байланысты виза қажет. Сондай-ақ белгілі бір мемлекеттің талабы бойынша медициналық сақтандыру және басқа құжаттардың болуы пайдалы.</p>
+                    <img src="passport.jpg" alt="Паспорт суреті">
+                </div>
+                <div id="answer3" class="answer" style="display: none;">
+                    <p>Біз төлемді несиелік және дебеттік карталармен, банктік аударымдармен және қолма-қол ақшамен қабылдаймыз. Біздің менеджерлерден брондау кезінде қол жетімді төлем әдістерін тексеріңіз.</p>
+                    <img src="payment.jpg" alt="Төлем жаса түрлері">
+                </div>
+                <div id="answer4" class="answer" style="display: none;">
+                    <p>Біз туризмнің әртүрлі түрлерін ұсынамыз, соның ішінде жағажай демалысы, экскурсиялар, шаңғы демалысы, круиздер және т.б. Туризмнің қол жетімді түрлері туралы толық ақпарат алу үшін менеджерлерімізге хабарласыңыз.</p>
+                    <img src="tourism.jpg" alt="Туризм түрлері">
+                </div>
+                <div id="answer5" class="answer" style="display: none;">
+                    <p>Саяхат алдында белгілі бір елге арналған қауіпсіздік кеңестерімен танысу ұсынылады. Ережелер мен нұсқауларды орындаңыз, қауіпті жерлерден аулақ болыңыз және жеке заттарыңыз бен құжаттарыңызға назар аударыңыз.</p>
+                    <img src="safety.jpg" alt="Қауіпсіз ілем">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: #007bff; color: #fff; text-align: center; padding: 20px;">
+    &copy; 2024 Қазақстанға саяхат!
+</footer>
+    <script>
+        function showAnswer(answerId) {
+            var answers = document.querySelectorAll('.answer');
+            answers.forEach(function(answer) {
+                answer.style.display = 'none';
+            });
+            var selectedAnswer = document.getElementById(answerId);
+            if (selectedAnswer) {
+                selectedAnswer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

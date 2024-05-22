@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('fon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+html {
+    background: url('fon.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li:first-child {
+    margin-left: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; 
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-content {
+    flex-grow: 1;
+}
+.testimonial p {
+    font-style: italic;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.testimonial cite {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.faq {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.faq h1 {
+    text-align: center;
+    color: #333;
+}
+.faq-questions {
+    float: left;
+    width: 40%;
+}
+.faq-answers {
+    float: right;
+    width: 60%;
+}
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+.answer {
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.answer p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.answer img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.hero {
+    padding: 50px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.team-member img {
+    width: 100px;
+    height: 150px;
+    border-radius: 0%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.team-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.team-member p {
+    font-style: italic;
+    color: #666;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.featured-destinations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+.destination {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.destination img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+}
+.destination:hover {
+    transform: translateY(-10px);
+}
+.destination:hover img {
+    opacity: 0.7;
+}
+.destination-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.destination:hover .destination-content {
+    opacity: 1;
+}
+.destination h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.destination p {
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.values {
+    text-align: center;
+}
+.values h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.value {
+    margin-bottom: 30px;
+}
+.value img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.value h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.value p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.custom-destinations {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.custom-destination {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.custom-destination img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.custom-destination-content {
+    color: #333;
+}
+.custom-destination-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.custom-destination-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.custom-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.custom-btn:hover {
+    background-color: #0056b3;
+}
